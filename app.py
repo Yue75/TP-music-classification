@@ -11,19 +11,6 @@ from pretraitement import nettoyer_texte
 SEUIL = 0.40       # en dessous de cette probabilité, on prévient que le modèle hésite
 MOTS_MINIMUM = 20  # en dessous de ce nombre de mots, on prévient que le texte est court
 
-exemples = {
-    "(aucun)": "",
-    "Metal": "Darkness falls upon the burning souls, blood and fire, the demons rise from hell, "
-             "death will reign eternal in the kingdom of the damned, screaming in the void",
-    "Jazz": "The moon is shining, my darling, dance with me tonight, so lovely, so heavenly, "
-            "your sweet romance, a thrill I can't resist, sentimental dreams of you and me",
-    "Rock": "Well all right, she's a woman on the highway, jack is drivin' all night long, "
-            "rock and roll is here to stay, say you will, babe",
-    "Folk": "Down by the river in the little town, my darling with a ribbon in her hair, "
-            "we walked past the graveyard gates on a bright morning",
-    "Pop (portugais)": "Meu amor, eu sinto saudade de você, a nossa paixão não vai acabar, "
-                       "quero te ver todo dia, coração apaixonado",
-}
 
 st.set_page_config(page_title="Genre musical", page_icon="🎵")
 
@@ -74,8 +61,7 @@ st.write("Collez les **paroles** d'une chanson, ou importez un fichier texte : "
 onglet_texte, onglet_fichier = st.tabs(["✍️ Écrire / coller", "📄 Importer un fichier .txt"])
 
 with onglet_texte:
-    choix = st.selectbox("Charger un exemple (facultatif)", list(exemples))
-    texte_saisi = st.text_area("Paroles", value=exemples[choix], height=220,
+    texte_saisi = st.text_area("Paroles", height=220,
                                placeholder="Collez ici les paroles de la chanson...")
 
 with onglet_fichier:
