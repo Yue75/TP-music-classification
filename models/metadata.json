@@ -1,0 +1,41 @@
+{
+  "nom_modele": "Régression logistique",
+  "type": "sklearn",
+  "fichier": "modele_genre.joblib",
+  "classes": [
+    "Autres",
+    "Folk",
+    "Indie",
+    "Jazz",
+    "Metal",
+    "Pop",
+    "Rock"
+  ],
+  "genres_regroupes_dans_autres": [
+    "R&B",
+    "Hip-Hop",
+    "Electronic",
+    "Country"
+  ],
+  "scores_test": {
+    "F1 macro": 0.3392,
+    "Balanced accuracy": 0.3863,
+    "Accuracy": 0.5177
+  },
+  "f1_test_par_genre": {
+    "Autres": 0.0954,
+    "Folk": 0.1292,
+    "Indie": 0.1203,
+    "Jazz": 0.3665,
+    "Metal": 0.4537,
+    "Pop": 0.6404,
+    "Rock": 0.5689
+  },
+  "nb_chansons_entrainement": 48224,
+  "dataset": "perceptron-743/music-multi-lingual",
+  "versions": {
+    "python": "3.13.5",
+    "scikit-learn": "1.8.0",
+    "tensorflow": "2.20.0"
+  }
+}

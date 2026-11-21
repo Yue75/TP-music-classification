@@ -1,0 +1,11 @@
+Modèle,Famille,Meilleurs paramètres,Temps (s),F1 macro,Balanced accuracy,Accuracy
+SVM linéaire,ML,{'classifier__C': 0.2},121.9159,0.3624,0.3932,0.5636
+Régression logistique,ML,{'classifier__C': 2.0},237.9865,0.3586,0.4065,0.5309
+Naive Bayes,ML,{'classifier__alpha': 0.01},102.7965,0.3199,0.3036,0.5867
+Complement NB,ML,{'classifier__alpha': 0.1},97.3547,0.2888,0.3028,0.574
+Transformer,DL,4 epochs,826.5459,0.2755,0.3851,0.3436
+KNN,ML,{'classifier__n_neighbors': 5},177.2815,0.2689,0.2559,0.5223
+MLP,DL,6 epochs,44.3548,0.2545,0.3949,0.2941
+LSTM,DL,4 epochs,608.6766,0.1784,0.3276,0.2024
+RNN,DL,4 epochs,219.0812,0.1468,0.2645,0.1884
+Baseline,Référence,-,0.0,0.0863,0.1429,0.4324
